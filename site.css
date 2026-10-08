@@ -1,0 +1,28 @@
+body {
+    background: #cee1df;
+    padding: 50px;
+
+h1{
+    background: rgba(17, 150, 52, 0.42)
+    
+}
+
+h2 {color:rgb(8, 46, 142)}
+
+HTML {
+    background-color: rgb(125, 218, 139);
+}
+
+P{
+    background-color:rgb(148, 212, 133);
+    padding:20px;
+    margin:50px;
+    font-size:20px
+}
+    
+}
+
+img {
+    width: 200px;
+}
+
