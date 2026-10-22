@@ -73,3 +73,13 @@ img {
 
 
 #chicken3
+
+// <weight>: Use a value from 400 to 700
+// <uniquifier>: Use a unique and descriptive class name
+
+<.libre-caslon-condensed-<uniquifier> {
+  font-family: "Libre Caslon Condensed", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}

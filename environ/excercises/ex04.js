@@ -1,0 +1,37 @@
+//the clicker button program
+
+//we create a variable named "count", the initial value is 0
+
+let count=0;
+
+//an indexed array of data
+let colors=["green", "orange", "brown", "yellow", "gold", "purple", "red", "pink"];
+
+//green, orange, brown, yellow, gold, purple, red, pink
+
+let buttonText="";
+
+//we listened for when an html element with id "needy-button" is clicked and then...
+
+$("#needy-button").click( function(){
+
+    //what to do when the button is clicked
+    //first, set a new value for "count", which is the current value +1
+
+    count=count + 1;
+
+    console.log(count);
+    console.log(colors[count-1]);
+
+    //now let's find our button and set a new text for it
+
+    buttonText="I was kicked " + count + " times and color is " + colors[count-1];
+
+    $("#needy-button").html( buttonText );
+
+    $("body").css( "background-color", colors[count-1] );
+
+    $("body").append(" <img width='50'src='" +colors[count-1] +".jpg'>" );
+
+});
+
