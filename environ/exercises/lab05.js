@@ -1,12 +1,14 @@
-let count = 1
+function askNumber(whatNumber) {
+    let userNumber = prompt("Guess 1-10?");
 
-function askNumber(newCount) {
-    $("#button").html("<p>" + "The count is " + newCount + "</p>")
+    if (userNumber == whatNumber) {
+        $("#output").html("You got it!");
+    }
+    else {
+        $("#output").html("Noooooope");
+    }
 }
 
-$("#button").click(function(){
-    count = count + 1
-
-    let newCount = count
-    askNumber(newCount)
+$("#good-button").click(function () {
+    askNumber(5);
 });
