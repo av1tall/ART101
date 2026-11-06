@@ -3,7 +3,7 @@ $("#add-button").click(function () {
     // .val() reads the field; .trim() removes spaces at either end.
     let label = $("#item-label").val().trim();
 
-    if (label == "") {
+    if (label == "") { ( label.length<20)
         $("#message").text("Say creature name");
     }
     else {
