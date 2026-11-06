@@ -4,7 +4,7 @@ $("#add-button").click(function () {
     let label = $("#item-label").val().trim();
 
     if (label == "") { ( label.length<20)
-        $("#message").text("Say creature name");
+        $("#message").text("Enter Creature Name");
     }
     else {
         // HTML inside $(...) creates a new element, not yet on the page.
